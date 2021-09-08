@@ -36,7 +36,7 @@ def edit_distance(word):
 #Main function
 def update_text_file(text_file):
     str = ''
-    initialize_dictionary('/Users/zayakhan/Dev/basic-spellcheck/google-10000-english.txt')
+    initialize_dictionary('google-10000-english.txt')
     with open(text_file, 'r') as f:
         update_list = []
         pattern = r'[^a-zA-Z0-9]'
@@ -67,4 +67,4 @@ def update_text_file(text_file):
         ''' 
 
 if __name__ == '__main__':
-    update_text_file('/Users/zayakhan/Dev/basic-spellcheck/austen-sense-corrupted.txt')
+    update_text_file('austen-sense-corrupted.txt')
