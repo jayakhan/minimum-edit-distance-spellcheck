@@ -1,9 +1,10 @@
-import re
+"""This file creates a corrupt document"""
 
+import re
 import nltk.corpus
 import numpy as np
 
-text = nltk.corpus.gutenberg.raw("austen-sense.txt")
+text = open("/Users/zayakhan/Dev/basic-spellcheck/austen-sense.txt").read()
 
 corrupted = ""
 
